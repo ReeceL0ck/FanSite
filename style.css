@@ -1,0 +1,55 @@
+
+body {
+    background-color: rgb(219, 219, 219);
+    }    
+h1 {
+    text-align: center;
+}
+h2 {
+    color: #333;
+}
+h3 {
+    text-align: center;
+    color: #555;
+}
+video {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}
+marquee {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.above-50 {
+  color: rgb(138, 238, 138);
+  font-weight: bold;
+}
+
+.below-50 {
+  color: rgb(143, 55, 55);
+}
+.title-image {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+}
+
+.rank-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current-rank {
+  margin-right: auto; /* Ensures the current rank stays on the left */
+  padding-left: 5%;
+}
+
+.hot-streak {
+  margin-left: auto; /* Ensures the hot streak stays on the right */
+  padding-right:5%;
+}
