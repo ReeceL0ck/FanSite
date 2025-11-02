@@ -3,6 +3,7 @@ from fastapi import (APIRouter,
                      HTTPException, 
                      File, 
                      UploadFile )
+from fastapi.responses import RedirectResponse
 
 
 from ..dependencies import get_token_header
@@ -14,12 +15,9 @@ import random
 router = APIRouter(
     prefix="/clips",
     tags=["clips"],
-    dependencies=[Depends(get_token_header)],
     responses={404: {"description": "Not found"}},
 )
 
-
-fake_items_db = {"plumbus": {"name": "Plumbus"}, "gun": {"name": "Portal Gun"}}
 
 
 @router.post("/uploadfile/")
@@ -29,7 +27,8 @@ async def uploadfile(file: UploadFile):
         print(file_path)
         with open(file_path, "wb") as f:
             f.write(file.file.read())
-            return {"message": "File saved successfully"}
+        return RedirectResponse(url="/", status_code=303)
+            # return {"message": "File saved successfully"}
     except Exception as e:
         return {"message": e.args}
 
