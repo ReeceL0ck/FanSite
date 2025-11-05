@@ -1,5 +1,5 @@
 
-const API_KEY = 'RGAPI-baefd220-b28d-4850-91ec-ca8de7e859e8';
+const API_KEY = '';
 const REGION = 'EUW1';
 const PUUID = 'e8sf3At2fL0HC54833IgRhDRGy3uslK9ubjxQibVn2rZoG9bpzv1yzoMLK4BZeOW3XFFcEO6UMd3zg';
 
