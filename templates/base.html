@@ -4,12 +4,13 @@
   <title>Play of the day!</title>
   {% block styles  %}
     <link rel="icon" href="{{cdn}}/img/icon/favicon.ico" type="image/x-icon" />
-    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='css/style.css') }}" rel="stylesheet">
+    <script src="static/js/modal.js" defer></script>
   {% endblock %}
 </head>    
     
 <body>
-  <div class="container ">
+  <div class="container">
   <div class="span-24 last">
   {% block body %}
 
